@@ -1,0 +1,30 @@
+<form [formGroup]="ProfileForm" (ngSubmit)="onSubmit()">
+  <div>
+    用户名:<input formControlName="username" type="text" required>
+  </div>
+  <div>
+    电话号码:<input formControlName="mobile" type="number">
+  </div>
+<!--  <div >-->
+<!--    <div>密码:<input formControlName="password" type="password"></div>-->
+<!--    <div>确认密码:<input formControlName="pconfirm" type="password"></div>-->
+<!--  </div>-->
+  <div formGroupName="address">
+      <label>Street:
+        <input type="text" formControlName="street">
+      </label>
+      <label>City:
+        <input type="text" formControlName="city">
+      </label>
+      <label>State:
+        <input type="text" formControlName="state">
+      </label>
+      <label>Zip Code:
+        <input type="text" formControlName="zip">
+      </label>
+    </div>
+  <button (click)="updateProfile()">注册</button>
+</form>
+<p>
+  Form Status: {{ ProfileForm.status }}
+</p>
