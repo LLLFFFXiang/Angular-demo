@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing-app';
+
+  public flag: boolean = true;
+
+  changeTitle() {
+    this.title = "改变后的title";
+  }
+
+  changeFlag() {
+    this.flag = !this.flag;
+  }
 }

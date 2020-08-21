@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "routing-app"
+    }
+  },
+  "defaultProject": "routing-app",
+  "cli": {
+    "analytics": "ccb7c2a3-fedf-4a0f-83bd-2c6734b3cef9"
+  }
 }
